@@ -27,26 +27,26 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
     private static final Set<Class<? extends RealmModel>> MODEL_CLASSES;
     static {
         Set<Class<? extends RealmModel>> modelClasses = new HashSet<Class<? extends RealmModel>>(7);
-        modelClasses.add(personal.droid.pychat.models.Message.class);
-        modelClasses.add(personal.droid.pychat.models.User.class);
-        modelClasses.add(personal.droid.pychat.models.MyString.class);
+        modelClasses.add(personal.droid.pychat.models.Attachment.class);
         modelClasses.add(personal.droid.pychat.models.Chat.class);
         modelClasses.add(personal.droid.pychat.models.Group.class);
         modelClasses.add(personal.droid.pychat.models.LogCall.class);
-        modelClasses.add(personal.droid.pychat.models.Attachment.class);
+        modelClasses.add(personal.droid.pychat.models.Message.class);
+        modelClasses.add(personal.droid.pychat.models.MyString.class);
+        modelClasses.add(personal.droid.pychat.models.User.class);
         MODEL_CLASSES = Collections.unmodifiableSet(modelClasses);
     }
 
     @Override
     public Map<Class<? extends RealmModel>, OsObjectSchemaInfo> getExpectedObjectSchemaInfoMap() {
         Map<Class<? extends RealmModel>, OsObjectSchemaInfo> infoMap = new HashMap<Class<? extends RealmModel>, OsObjectSchemaInfo>(7);
-        infoMap.put(personal.droid.pychat.models.Message.class, io.realm.personal_droid_pychat_models_MessageRealmProxy.getExpectedObjectSchemaInfo());
-        infoMap.put(personal.droid.pychat.models.User.class, io.realm.personal_droid_pychat_models_UserRealmProxy.getExpectedObjectSchemaInfo());
-        infoMap.put(personal.droid.pychat.models.MyString.class, io.realm.personal_droid_pychat_models_MyStringRealmProxy.getExpectedObjectSchemaInfo());
+        infoMap.put(personal.droid.pychat.models.Attachment.class, io.realm.personal_droid_pychat_models_AttachmentRealmProxy.getExpectedObjectSchemaInfo());
         infoMap.put(personal.droid.pychat.models.Chat.class, io.realm.personal_droid_pychat_models_ChatRealmProxy.getExpectedObjectSchemaInfo());
         infoMap.put(personal.droid.pychat.models.Group.class, io.realm.personal_droid_pychat_models_GroupRealmProxy.getExpectedObjectSchemaInfo());
         infoMap.put(personal.droid.pychat.models.LogCall.class, io.realm.personal_droid_pychat_models_LogCallRealmProxy.getExpectedObjectSchemaInfo());
-        infoMap.put(personal.droid.pychat.models.Attachment.class, io.realm.personal_droid_pychat_models_AttachmentRealmProxy.getExpectedObjectSchemaInfo());
+        infoMap.put(personal.droid.pychat.models.Message.class, io.realm.personal_droid_pychat_models_MessageRealmProxy.getExpectedObjectSchemaInfo());
+        infoMap.put(personal.droid.pychat.models.MyString.class, io.realm.personal_droid_pychat_models_MyStringRealmProxy.getExpectedObjectSchemaInfo());
+        infoMap.put(personal.droid.pychat.models.User.class, io.realm.personal_droid_pychat_models_UserRealmProxy.getExpectedObjectSchemaInfo());
         return infoMap;
     }
 
@@ -54,14 +54,8 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
     public ColumnInfo createColumnInfo(Class<? extends RealmModel> clazz, OsSchemaInfo schemaInfo) {
         checkClass(clazz);
 
-        if (clazz.equals(personal.droid.pychat.models.Message.class)) {
-            return io.realm.personal_droid_pychat_models_MessageRealmProxy.createColumnInfo(schemaInfo);
-        }
-        if (clazz.equals(personal.droid.pychat.models.User.class)) {
-            return io.realm.personal_droid_pychat_models_UserRealmProxy.createColumnInfo(schemaInfo);
-        }
-        if (clazz.equals(personal.droid.pychat.models.MyString.class)) {
-            return io.realm.personal_droid_pychat_models_MyStringRealmProxy.createColumnInfo(schemaInfo);
+        if (clazz.equals(personal.droid.pychat.models.Attachment.class)) {
+            return io.realm.personal_droid_pychat_models_AttachmentRealmProxy.createColumnInfo(schemaInfo);
         }
         if (clazz.equals(personal.droid.pychat.models.Chat.class)) {
             return io.realm.personal_droid_pychat_models_ChatRealmProxy.createColumnInfo(schemaInfo);
@@ -72,8 +66,14 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
         if (clazz.equals(personal.droid.pychat.models.LogCall.class)) {
             return io.realm.personal_droid_pychat_models_LogCallRealmProxy.createColumnInfo(schemaInfo);
         }
-        if (clazz.equals(personal.droid.pychat.models.Attachment.class)) {
-            return io.realm.personal_droid_pychat_models_AttachmentRealmProxy.createColumnInfo(schemaInfo);
+        if (clazz.equals(personal.droid.pychat.models.Message.class)) {
+            return io.realm.personal_droid_pychat_models_MessageRealmProxy.createColumnInfo(schemaInfo);
+        }
+        if (clazz.equals(personal.droid.pychat.models.MyString.class)) {
+            return io.realm.personal_droid_pychat_models_MyStringRealmProxy.createColumnInfo(schemaInfo);
+        }
+        if (clazz.equals(personal.droid.pychat.models.User.class)) {
+            return io.realm.personal_droid_pychat_models_UserRealmProxy.createColumnInfo(schemaInfo);
         }
         throw getMissingProxyClassException(clazz);
     }
@@ -82,14 +82,8 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
     public String getSimpleClassNameImpl(Class<? extends RealmModel> clazz) {
         checkClass(clazz);
 
-        if (clazz.equals(personal.droid.pychat.models.Message.class)) {
-            return "Message";
-        }
-        if (clazz.equals(personal.droid.pychat.models.User.class)) {
-            return "User";
-        }
-        if (clazz.equals(personal.droid.pychat.models.MyString.class)) {
-            return "MyString";
+        if (clazz.equals(personal.droid.pychat.models.Attachment.class)) {
+            return "Attachment";
         }
         if (clazz.equals(personal.droid.pychat.models.Chat.class)) {
             return "Chat";
@@ -100,8 +94,14 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
         if (clazz.equals(personal.droid.pychat.models.LogCall.class)) {
             return "LogCall";
         }
-        if (clazz.equals(personal.droid.pychat.models.Attachment.class)) {
-            return "Attachment";
+        if (clazz.equals(personal.droid.pychat.models.Message.class)) {
+            return "Message";
+        }
+        if (clazz.equals(personal.droid.pychat.models.MyString.class)) {
+            return "MyString";
+        }
+        if (clazz.equals(personal.droid.pychat.models.User.class)) {
+            return "User";
         }
         throw getMissingProxyClassException(clazz);
     }
@@ -113,14 +113,8 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
             objectContext.set((BaseRealm) baseRealm, row, columnInfo, acceptDefaultValue, excludeFields);
             checkClass(clazz);
 
-            if (clazz.equals(personal.droid.pychat.models.Message.class)) {
-                return clazz.cast(new io.realm.personal_droid_pychat_models_MessageRealmProxy());
-            }
-            if (clazz.equals(personal.droid.pychat.models.User.class)) {
-                return clazz.cast(new io.realm.personal_droid_pychat_models_UserRealmProxy());
-            }
-            if (clazz.equals(personal.droid.pychat.models.MyString.class)) {
-                return clazz.cast(new io.realm.personal_droid_pychat_models_MyStringRealmProxy());
+            if (clazz.equals(personal.droid.pychat.models.Attachment.class)) {
+                return clazz.cast(new io.realm.personal_droid_pychat_models_AttachmentRealmProxy());
             }
             if (clazz.equals(personal.droid.pychat.models.Chat.class)) {
                 return clazz.cast(new io.realm.personal_droid_pychat_models_ChatRealmProxy());
@@ -131,8 +125,14 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
             if (clazz.equals(personal.droid.pychat.models.LogCall.class)) {
                 return clazz.cast(new io.realm.personal_droid_pychat_models_LogCallRealmProxy());
             }
-            if (clazz.equals(personal.droid.pychat.models.Attachment.class)) {
-                return clazz.cast(new io.realm.personal_droid_pychat_models_AttachmentRealmProxy());
+            if (clazz.equals(personal.droid.pychat.models.Message.class)) {
+                return clazz.cast(new io.realm.personal_droid_pychat_models_MessageRealmProxy());
+            }
+            if (clazz.equals(personal.droid.pychat.models.MyString.class)) {
+                return clazz.cast(new io.realm.personal_droid_pychat_models_MyStringRealmProxy());
+            }
+            if (clazz.equals(personal.droid.pychat.models.User.class)) {
+                return clazz.cast(new io.realm.personal_droid_pychat_models_UserRealmProxy());
             }
             throw getMissingProxyClassException(clazz);
         } finally {
@@ -151,17 +151,9 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
         // generated by RealmProxy or the original type extending directly from RealmObject
         @SuppressWarnings("unchecked") Class<E> clazz = (Class<E>) ((obj instanceof RealmObjectProxy) ? obj.getClass().getSuperclass() : obj.getClass());
 
-        if (clazz.equals(personal.droid.pychat.models.Message.class)) {
-            personal_droid_pychat_models_MessageRealmProxy.MessageColumnInfo columnInfo = (personal_droid_pychat_models_MessageRealmProxy.MessageColumnInfo) realm.getSchema().getColumnInfo(personal.droid.pychat.models.Message.class);
-            return clazz.cast(io.realm.personal_droid_pychat_models_MessageRealmProxy.copyOrUpdate(realm, columnInfo, (personal.droid.pychat.models.Message) obj, update, cache, flags));
-        }
-        if (clazz.equals(personal.droid.pychat.models.User.class)) {
-            personal_droid_pychat_models_UserRealmProxy.UserColumnInfo columnInfo = (personal_droid_pychat_models_UserRealmProxy.UserColumnInfo) realm.getSchema().getColumnInfo(personal.droid.pychat.models.User.class);
-            return clazz.cast(io.realm.personal_droid_pychat_models_UserRealmProxy.copyOrUpdate(realm, columnInfo, (personal.droid.pychat.models.User) obj, update, cache, flags));
-        }
-        if (clazz.equals(personal.droid.pychat.models.MyString.class)) {
-            personal_droid_pychat_models_MyStringRealmProxy.MyStringColumnInfo columnInfo = (personal_droid_pychat_models_MyStringRealmProxy.MyStringColumnInfo) realm.getSchema().getColumnInfo(personal.droid.pychat.models.MyString.class);
-            return clazz.cast(io.realm.personal_droid_pychat_models_MyStringRealmProxy.copyOrUpdate(realm, columnInfo, (personal.droid.pychat.models.MyString) obj, update, cache, flags));
+        if (clazz.equals(personal.droid.pychat.models.Attachment.class)) {
+            personal_droid_pychat_models_AttachmentRealmProxy.AttachmentColumnInfo columnInfo = (personal_droid_pychat_models_AttachmentRealmProxy.AttachmentColumnInfo) realm.getSchema().getColumnInfo(personal.droid.pychat.models.Attachment.class);
+            return clazz.cast(io.realm.personal_droid_pychat_models_AttachmentRealmProxy.copyOrUpdate(realm, columnInfo, (personal.droid.pychat.models.Attachment) obj, update, cache, flags));
         }
         if (clazz.equals(personal.droid.pychat.models.Chat.class)) {
             personal_droid_pychat_models_ChatRealmProxy.ChatColumnInfo columnInfo = (personal_droid_pychat_models_ChatRealmProxy.ChatColumnInfo) realm.getSchema().getColumnInfo(personal.droid.pychat.models.Chat.class);
@@ -175,9 +167,17 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
             personal_droid_pychat_models_LogCallRealmProxy.LogCallColumnInfo columnInfo = (personal_droid_pychat_models_LogCallRealmProxy.LogCallColumnInfo) realm.getSchema().getColumnInfo(personal.droid.pychat.models.LogCall.class);
             return clazz.cast(io.realm.personal_droid_pychat_models_LogCallRealmProxy.copyOrUpdate(realm, columnInfo, (personal.droid.pychat.models.LogCall) obj, update, cache, flags));
         }
-        if (clazz.equals(personal.droid.pychat.models.Attachment.class)) {
-            personal_droid_pychat_models_AttachmentRealmProxy.AttachmentColumnInfo columnInfo = (personal_droid_pychat_models_AttachmentRealmProxy.AttachmentColumnInfo) realm.getSchema().getColumnInfo(personal.droid.pychat.models.Attachment.class);
-            return clazz.cast(io.realm.personal_droid_pychat_models_AttachmentRealmProxy.copyOrUpdate(realm, columnInfo, (personal.droid.pychat.models.Attachment) obj, update, cache, flags));
+        if (clazz.equals(personal.droid.pychat.models.Message.class)) {
+            personal_droid_pychat_models_MessageRealmProxy.MessageColumnInfo columnInfo = (personal_droid_pychat_models_MessageRealmProxy.MessageColumnInfo) realm.getSchema().getColumnInfo(personal.droid.pychat.models.Message.class);
+            return clazz.cast(io.realm.personal_droid_pychat_models_MessageRealmProxy.copyOrUpdate(realm, columnInfo, (personal.droid.pychat.models.Message) obj, update, cache, flags));
+        }
+        if (clazz.equals(personal.droid.pychat.models.MyString.class)) {
+            personal_droid_pychat_models_MyStringRealmProxy.MyStringColumnInfo columnInfo = (personal_droid_pychat_models_MyStringRealmProxy.MyStringColumnInfo) realm.getSchema().getColumnInfo(personal.droid.pychat.models.MyString.class);
+            return clazz.cast(io.realm.personal_droid_pychat_models_MyStringRealmProxy.copyOrUpdate(realm, columnInfo, (personal.droid.pychat.models.MyString) obj, update, cache, flags));
+        }
+        if (clazz.equals(personal.droid.pychat.models.User.class)) {
+            personal_droid_pychat_models_UserRealmProxy.UserColumnInfo columnInfo = (personal_droid_pychat_models_UserRealmProxy.UserColumnInfo) realm.getSchema().getColumnInfo(personal.droid.pychat.models.User.class);
+            return clazz.cast(io.realm.personal_droid_pychat_models_UserRealmProxy.copyOrUpdate(realm, columnInfo, (personal.droid.pychat.models.User) obj, update, cache, flags));
         }
         throw getMissingProxyClassException(clazz);
     }
@@ -188,20 +188,20 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
         // generated by RealmProxy or the original type extending directly from RealmObject
         @SuppressWarnings("unchecked") Class<RealmModel> clazz = (Class<RealmModel>) ((object instanceof RealmObjectProxy) ? object.getClass().getSuperclass() : object.getClass());
 
-        if (clazz.equals(personal.droid.pychat.models.Message.class)) {
-            io.realm.personal_droid_pychat_models_MessageRealmProxy.insert(realm, (personal.droid.pychat.models.Message) object, cache);
-        } else if (clazz.equals(personal.droid.pychat.models.User.class)) {
-            io.realm.personal_droid_pychat_models_UserRealmProxy.insert(realm, (personal.droid.pychat.models.User) object, cache);
-        } else if (clazz.equals(personal.droid.pychat.models.MyString.class)) {
-            io.realm.personal_droid_pychat_models_MyStringRealmProxy.insert(realm, (personal.droid.pychat.models.MyString) object, cache);
+        if (clazz.equals(personal.droid.pychat.models.Attachment.class)) {
+            io.realm.personal_droid_pychat_models_AttachmentRealmProxy.insert(realm, (personal.droid.pychat.models.Attachment) object, cache);
         } else if (clazz.equals(personal.droid.pychat.models.Chat.class)) {
             io.realm.personal_droid_pychat_models_ChatRealmProxy.insert(realm, (personal.droid.pychat.models.Chat) object, cache);
         } else if (clazz.equals(personal.droid.pychat.models.Group.class)) {
             io.realm.personal_droid_pychat_models_GroupRealmProxy.insert(realm, (personal.droid.pychat.models.Group) object, cache);
         } else if (clazz.equals(personal.droid.pychat.models.LogCall.class)) {
             io.realm.personal_droid_pychat_models_LogCallRealmProxy.insert(realm, (personal.droid.pychat.models.LogCall) object, cache);
-        } else if (clazz.equals(personal.droid.pychat.models.Attachment.class)) {
-            io.realm.personal_droid_pychat_models_AttachmentRealmProxy.insert(realm, (personal.droid.pychat.models.Attachment) object, cache);
+        } else if (clazz.equals(personal.droid.pychat.models.Message.class)) {
+            io.realm.personal_droid_pychat_models_MessageRealmProxy.insert(realm, (personal.droid.pychat.models.Message) object, cache);
+        } else if (clazz.equals(personal.droid.pychat.models.MyString.class)) {
+            io.realm.personal_droid_pychat_models_MyStringRealmProxy.insert(realm, (personal.droid.pychat.models.MyString) object, cache);
+        } else if (clazz.equals(personal.droid.pychat.models.User.class)) {
+            io.realm.personal_droid_pychat_models_UserRealmProxy.insert(realm, (personal.droid.pychat.models.User) object, cache);
         } else {
             throw getMissingProxyClassException(clazz);
         }
@@ -219,38 +219,38 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
             // generated by RealmProxy or the original type extending directly from RealmObject
             @SuppressWarnings("unchecked") Class<RealmModel> clazz = (Class<RealmModel>) ((object instanceof RealmObjectProxy) ? object.getClass().getSuperclass() : object.getClass());
 
-            if (clazz.equals(personal.droid.pychat.models.Message.class)) {
-                io.realm.personal_droid_pychat_models_MessageRealmProxy.insert(realm, (personal.droid.pychat.models.Message) object, cache);
-            } else if (clazz.equals(personal.droid.pychat.models.User.class)) {
-                io.realm.personal_droid_pychat_models_UserRealmProxy.insert(realm, (personal.droid.pychat.models.User) object, cache);
-            } else if (clazz.equals(personal.droid.pychat.models.MyString.class)) {
-                io.realm.personal_droid_pychat_models_MyStringRealmProxy.insert(realm, (personal.droid.pychat.models.MyString) object, cache);
+            if (clazz.equals(personal.droid.pychat.models.Attachment.class)) {
+                io.realm.personal_droid_pychat_models_AttachmentRealmProxy.insert(realm, (personal.droid.pychat.models.Attachment) object, cache);
             } else if (clazz.equals(personal.droid.pychat.models.Chat.class)) {
                 io.realm.personal_droid_pychat_models_ChatRealmProxy.insert(realm, (personal.droid.pychat.models.Chat) object, cache);
             } else if (clazz.equals(personal.droid.pychat.models.Group.class)) {
                 io.realm.personal_droid_pychat_models_GroupRealmProxy.insert(realm, (personal.droid.pychat.models.Group) object, cache);
             } else if (clazz.equals(personal.droid.pychat.models.LogCall.class)) {
                 io.realm.personal_droid_pychat_models_LogCallRealmProxy.insert(realm, (personal.droid.pychat.models.LogCall) object, cache);
-            } else if (clazz.equals(personal.droid.pychat.models.Attachment.class)) {
-                io.realm.personal_droid_pychat_models_AttachmentRealmProxy.insert(realm, (personal.droid.pychat.models.Attachment) object, cache);
+            } else if (clazz.equals(personal.droid.pychat.models.Message.class)) {
+                io.realm.personal_droid_pychat_models_MessageRealmProxy.insert(realm, (personal.droid.pychat.models.Message) object, cache);
+            } else if (clazz.equals(personal.droid.pychat.models.MyString.class)) {
+                io.realm.personal_droid_pychat_models_MyStringRealmProxy.insert(realm, (personal.droid.pychat.models.MyString) object, cache);
+            } else if (clazz.equals(personal.droid.pychat.models.User.class)) {
+                io.realm.personal_droid_pychat_models_UserRealmProxy.insert(realm, (personal.droid.pychat.models.User) object, cache);
             } else {
                 throw getMissingProxyClassException(clazz);
             }
             if (iterator.hasNext()) {
-                if (clazz.equals(personal.droid.pychat.models.Message.class)) {
-                    io.realm.personal_droid_pychat_models_MessageRealmProxy.insert(realm, iterator, cache);
-                } else if (clazz.equals(personal.droid.pychat.models.User.class)) {
-                    io.realm.personal_droid_pychat_models_UserRealmProxy.insert(realm, iterator, cache);
-                } else if (clazz.equals(personal.droid.pychat.models.MyString.class)) {
-                    io.realm.personal_droid_pychat_models_MyStringRealmProxy.insert(realm, iterator, cache);
+                if (clazz.equals(personal.droid.pychat.models.Attachment.class)) {
+                    io.realm.personal_droid_pychat_models_AttachmentRealmProxy.insert(realm, iterator, cache);
                 } else if (clazz.equals(personal.droid.pychat.models.Chat.class)) {
                     io.realm.personal_droid_pychat_models_ChatRealmProxy.insert(realm, iterator, cache);
                 } else if (clazz.equals(personal.droid.pychat.models.Group.class)) {
                     io.realm.personal_droid_pychat_models_GroupRealmProxy.insert(realm, iterator, cache);
                 } else if (clazz.equals(personal.droid.pychat.models.LogCall.class)) {
                     io.realm.personal_droid_pychat_models_LogCallRealmProxy.insert(realm, iterator, cache);
-                } else if (clazz.equals(personal.droid.pychat.models.Attachment.class)) {
-                    io.realm.personal_droid_pychat_models_AttachmentRealmProxy.insert(realm, iterator, cache);
+                } else if (clazz.equals(personal.droid.pychat.models.Message.class)) {
+                    io.realm.personal_droid_pychat_models_MessageRealmProxy.insert(realm, iterator, cache);
+                } else if (clazz.equals(personal.droid.pychat.models.MyString.class)) {
+                    io.realm.personal_droid_pychat_models_MyStringRealmProxy.insert(realm, iterator, cache);
+                } else if (clazz.equals(personal.droid.pychat.models.User.class)) {
+                    io.realm.personal_droid_pychat_models_UserRealmProxy.insert(realm, iterator, cache);
                 } else {
                     throw getMissingProxyClassException(clazz);
                 }
@@ -264,20 +264,20 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
         // generated by RealmProxy or the original type extending directly from RealmObject
         @SuppressWarnings("unchecked") Class<RealmModel> clazz = (Class<RealmModel>) ((obj instanceof RealmObjectProxy) ? obj.getClass().getSuperclass() : obj.getClass());
 
-        if (clazz.equals(personal.droid.pychat.models.Message.class)) {
-            io.realm.personal_droid_pychat_models_MessageRealmProxy.insertOrUpdate(realm, (personal.droid.pychat.models.Message) obj, cache);
-        } else if (clazz.equals(personal.droid.pychat.models.User.class)) {
-            io.realm.personal_droid_pychat_models_UserRealmProxy.insertOrUpdate(realm, (personal.droid.pychat.models.User) obj, cache);
-        } else if (clazz.equals(personal.droid.pychat.models.MyString.class)) {
-            io.realm.personal_droid_pychat_models_MyStringRealmProxy.insertOrUpdate(realm, (personal.droid.pychat.models.MyString) obj, cache);
+        if (clazz.equals(personal.droid.pychat.models.Attachment.class)) {
+            io.realm.personal_droid_pychat_models_AttachmentRealmProxy.insertOrUpdate(realm, (personal.droid.pychat.models.Attachment) obj, cache);
         } else if (clazz.equals(personal.droid.pychat.models.Chat.class)) {
             io.realm.personal_droid_pychat_models_ChatRealmProxy.insertOrUpdate(realm, (personal.droid.pychat.models.Chat) obj, cache);
         } else if (clazz.equals(personal.droid.pychat.models.Group.class)) {
             io.realm.personal_droid_pychat_models_GroupRealmProxy.insertOrUpdate(realm, (personal.droid.pychat.models.Group) obj, cache);
         } else if (clazz.equals(personal.droid.pychat.models.LogCall.class)) {
             io.realm.personal_droid_pychat_models_LogCallRealmProxy.insertOrUpdate(realm, (personal.droid.pychat.models.LogCall) obj, cache);
-        } else if (clazz.equals(personal.droid.pychat.models.Attachment.class)) {
-            io.realm.personal_droid_pychat_models_AttachmentRealmProxy.insertOrUpdate(realm, (personal.droid.pychat.models.Attachment) obj, cache);
+        } else if (clazz.equals(personal.droid.pychat.models.Message.class)) {
+            io.realm.personal_droid_pychat_models_MessageRealmProxy.insertOrUpdate(realm, (personal.droid.pychat.models.Message) obj, cache);
+        } else if (clazz.equals(personal.droid.pychat.models.MyString.class)) {
+            io.realm.personal_droid_pychat_models_MyStringRealmProxy.insertOrUpdate(realm, (personal.droid.pychat.models.MyString) obj, cache);
+        } else if (clazz.equals(personal.droid.pychat.models.User.class)) {
+            io.realm.personal_droid_pychat_models_UserRealmProxy.insertOrUpdate(realm, (personal.droid.pychat.models.User) obj, cache);
         } else {
             throw getMissingProxyClassException(clazz);
         }
@@ -295,38 +295,38 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
             // generated by RealmProxy or the original type extending directly from RealmObject
             @SuppressWarnings("unchecked") Class<RealmModel> clazz = (Class<RealmModel>) ((object instanceof RealmObjectProxy) ? object.getClass().getSuperclass() : object.getClass());
 
-            if (clazz.equals(personal.droid.pychat.models.Message.class)) {
-                io.realm.personal_droid_pychat_models_MessageRealmProxy.insertOrUpdate(realm, (personal.droid.pychat.models.Message) object, cache);
-            } else if (clazz.equals(personal.droid.pychat.models.User.class)) {
-                io.realm.personal_droid_pychat_models_UserRealmProxy.insertOrUpdate(realm, (personal.droid.pychat.models.User) object, cache);
-            } else if (clazz.equals(personal.droid.pychat.models.MyString.class)) {
-                io.realm.personal_droid_pychat_models_MyStringRealmProxy.insertOrUpdate(realm, (personal.droid.pychat.models.MyString) object, cache);
+            if (clazz.equals(personal.droid.pychat.models.Attachment.class)) {
+                io.realm.personal_droid_pychat_models_AttachmentRealmProxy.insertOrUpdate(realm, (personal.droid.pychat.models.Attachment) object, cache);
             } else if (clazz.equals(personal.droid.pychat.models.Chat.class)) {
                 io.realm.personal_droid_pychat_models_ChatRealmProxy.insertOrUpdate(realm, (personal.droid.pychat.models.Chat) object, cache);
             } else if (clazz.equals(personal.droid.pychat.models.Group.class)) {
                 io.realm.personal_droid_pychat_models_GroupRealmProxy.insertOrUpdate(realm, (personal.droid.pychat.models.Group) object, cache);
             } else if (clazz.equals(personal.droid.pychat.models.LogCall.class)) {
                 io.realm.personal_droid_pychat_models_LogCallRealmProxy.insertOrUpdate(realm, (personal.droid.pychat.models.LogCall) object, cache);
-            } else if (clazz.equals(personal.droid.pychat.models.Attachment.class)) {
-                io.realm.personal_droid_pychat_models_AttachmentRealmProxy.insertOrUpdate(realm, (personal.droid.pychat.models.Attachment) object, cache);
+            } else if (clazz.equals(personal.droid.pychat.models.Message.class)) {
+                io.realm.personal_droid_pychat_models_MessageRealmProxy.insertOrUpdate(realm, (personal.droid.pychat.models.Message) object, cache);
+            } else if (clazz.equals(personal.droid.pychat.models.MyString.class)) {
+                io.realm.personal_droid_pychat_models_MyStringRealmProxy.insertOrUpdate(realm, (personal.droid.pychat.models.MyString) object, cache);
+            } else if (clazz.equals(personal.droid.pychat.models.User.class)) {
+                io.realm.personal_droid_pychat_models_UserRealmProxy.insertOrUpdate(realm, (personal.droid.pychat.models.User) object, cache);
             } else {
                 throw getMissingProxyClassException(clazz);
             }
             if (iterator.hasNext()) {
-                if (clazz.equals(personal.droid.pychat.models.Message.class)) {
-                    io.realm.personal_droid_pychat_models_MessageRealmProxy.insertOrUpdate(realm, iterator, cache);
-                } else if (clazz.equals(personal.droid.pychat.models.User.class)) {
-                    io.realm.personal_droid_pychat_models_UserRealmProxy.insertOrUpdate(realm, iterator, cache);
-                } else if (clazz.equals(personal.droid.pychat.models.MyString.class)) {
-                    io.realm.personal_droid_pychat_models_MyStringRealmProxy.insertOrUpdate(realm, iterator, cache);
+                if (clazz.equals(personal.droid.pychat.models.Attachment.class)) {
+                    io.realm.personal_droid_pychat_models_AttachmentRealmProxy.insertOrUpdate(realm, iterator, cache);
                 } else if (clazz.equals(personal.droid.pychat.models.Chat.class)) {
                     io.realm.personal_droid_pychat_models_ChatRealmProxy.insertOrUpdate(realm, iterator, cache);
                 } else if (clazz.equals(personal.droid.pychat.models.Group.class)) {
                     io.realm.personal_droid_pychat_models_GroupRealmProxy.insertOrUpdate(realm, iterator, cache);
                 } else if (clazz.equals(personal.droid.pychat.models.LogCall.class)) {
                     io.realm.personal_droid_pychat_models_LogCallRealmProxy.insertOrUpdate(realm, iterator, cache);
-                } else if (clazz.equals(personal.droid.pychat.models.Attachment.class)) {
-                    io.realm.personal_droid_pychat_models_AttachmentRealmProxy.insertOrUpdate(realm, iterator, cache);
+                } else if (clazz.equals(personal.droid.pychat.models.Message.class)) {
+                    io.realm.personal_droid_pychat_models_MessageRealmProxy.insertOrUpdate(realm, iterator, cache);
+                } else if (clazz.equals(personal.droid.pychat.models.MyString.class)) {
+                    io.realm.personal_droid_pychat_models_MyStringRealmProxy.insertOrUpdate(realm, iterator, cache);
+                } else if (clazz.equals(personal.droid.pychat.models.User.class)) {
+                    io.realm.personal_droid_pychat_models_UserRealmProxy.insertOrUpdate(realm, iterator, cache);
                 } else {
                     throw getMissingProxyClassException(clazz);
                 }
@@ -339,14 +339,8 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
         throws JSONException {
         checkClass(clazz);
 
-        if (clazz.equals(personal.droid.pychat.models.Message.class)) {
-            return clazz.cast(io.realm.personal_droid_pychat_models_MessageRealmProxy.createOrUpdateUsingJsonObject(realm, json, update));
-        }
-        if (clazz.equals(personal.droid.pychat.models.User.class)) {
-            return clazz.cast(io.realm.personal_droid_pychat_models_UserRealmProxy.createOrUpdateUsingJsonObject(realm, json, update));
-        }
-        if (clazz.equals(personal.droid.pychat.models.MyString.class)) {
-            return clazz.cast(io.realm.personal_droid_pychat_models_MyStringRealmProxy.createOrUpdateUsingJsonObject(realm, json, update));
+        if (clazz.equals(personal.droid.pychat.models.Attachment.class)) {
+            return clazz.cast(io.realm.personal_droid_pychat_models_AttachmentRealmProxy.createOrUpdateUsingJsonObject(realm, json, update));
         }
         if (clazz.equals(personal.droid.pychat.models.Chat.class)) {
             return clazz.cast(io.realm.personal_droid_pychat_models_ChatRealmProxy.createOrUpdateUsingJsonObject(realm, json, update));
@@ -357,8 +351,14 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
         if (clazz.equals(personal.droid.pychat.models.LogCall.class)) {
             return clazz.cast(io.realm.personal_droid_pychat_models_LogCallRealmProxy.createOrUpdateUsingJsonObject(realm, json, update));
         }
-        if (clazz.equals(personal.droid.pychat.models.Attachment.class)) {
-            return clazz.cast(io.realm.personal_droid_pychat_models_AttachmentRealmProxy.createOrUpdateUsingJsonObject(realm, json, update));
+        if (clazz.equals(personal.droid.pychat.models.Message.class)) {
+            return clazz.cast(io.realm.personal_droid_pychat_models_MessageRealmProxy.createOrUpdateUsingJsonObject(realm, json, update));
+        }
+        if (clazz.equals(personal.droid.pychat.models.MyString.class)) {
+            return clazz.cast(io.realm.personal_droid_pychat_models_MyStringRealmProxy.createOrUpdateUsingJsonObject(realm, json, update));
+        }
+        if (clazz.equals(personal.droid.pychat.models.User.class)) {
+            return clazz.cast(io.realm.personal_droid_pychat_models_UserRealmProxy.createOrUpdateUsingJsonObject(realm, json, update));
         }
         throw getMissingProxyClassException(clazz);
     }
@@ -368,14 +368,8 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
         throws IOException {
         checkClass(clazz);
 
-        if (clazz.equals(personal.droid.pychat.models.Message.class)) {
-            return clazz.cast(io.realm.personal_droid_pychat_models_MessageRealmProxy.createUsingJsonStream(realm, reader));
-        }
-        if (clazz.equals(personal.droid.pychat.models.User.class)) {
-            return clazz.cast(io.realm.personal_droid_pychat_models_UserRealmProxy.createUsingJsonStream(realm, reader));
-        }
-        if (clazz.equals(personal.droid.pychat.models.MyString.class)) {
-            return clazz.cast(io.realm.personal_droid_pychat_models_MyStringRealmProxy.createUsingJsonStream(realm, reader));
+        if (clazz.equals(personal.droid.pychat.models.Attachment.class)) {
+            return clazz.cast(io.realm.personal_droid_pychat_models_AttachmentRealmProxy.createUsingJsonStream(realm, reader));
         }
         if (clazz.equals(personal.droid.pychat.models.Chat.class)) {
             return clazz.cast(io.realm.personal_droid_pychat_models_ChatRealmProxy.createUsingJsonStream(realm, reader));
@@ -386,8 +380,14 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
         if (clazz.equals(personal.droid.pychat.models.LogCall.class)) {
             return clazz.cast(io.realm.personal_droid_pychat_models_LogCallRealmProxy.createUsingJsonStream(realm, reader));
         }
-        if (clazz.equals(personal.droid.pychat.models.Attachment.class)) {
-            return clazz.cast(io.realm.personal_droid_pychat_models_AttachmentRealmProxy.createUsingJsonStream(realm, reader));
+        if (clazz.equals(personal.droid.pychat.models.Message.class)) {
+            return clazz.cast(io.realm.personal_droid_pychat_models_MessageRealmProxy.createUsingJsonStream(realm, reader));
+        }
+        if (clazz.equals(personal.droid.pychat.models.MyString.class)) {
+            return clazz.cast(io.realm.personal_droid_pychat_models_MyStringRealmProxy.createUsingJsonStream(realm, reader));
+        }
+        if (clazz.equals(personal.droid.pychat.models.User.class)) {
+            return clazz.cast(io.realm.personal_droid_pychat_models_UserRealmProxy.createUsingJsonStream(realm, reader));
         }
         throw getMissingProxyClassException(clazz);
     }
@@ -398,14 +398,8 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
         // generated by RealmProxy or the original type extending directly from RealmObject
         @SuppressWarnings("unchecked") Class<E> clazz = (Class<E>) realmObject.getClass().getSuperclass();
 
-        if (clazz.equals(personal.droid.pychat.models.Message.class)) {
-            return clazz.cast(io.realm.personal_droid_pychat_models_MessageRealmProxy.createDetachedCopy((personal.droid.pychat.models.Message) realmObject, 0, maxDepth, cache));
-        }
-        if (clazz.equals(personal.droid.pychat.models.User.class)) {
-            return clazz.cast(io.realm.personal_droid_pychat_models_UserRealmProxy.createDetachedCopy((personal.droid.pychat.models.User) realmObject, 0, maxDepth, cache));
-        }
-        if (clazz.equals(personal.droid.pychat.models.MyString.class)) {
-            return clazz.cast(io.realm.personal_droid_pychat_models_MyStringRealmProxy.createDetachedCopy((personal.droid.pychat.models.MyString) realmObject, 0, maxDepth, cache));
+        if (clazz.equals(personal.droid.pychat.models.Attachment.class)) {
+            return clazz.cast(io.realm.personal_droid_pychat_models_AttachmentRealmProxy.createDetachedCopy((personal.droid.pychat.models.Attachment) realmObject, 0, maxDepth, cache));
         }
         if (clazz.equals(personal.droid.pychat.models.Chat.class)) {
             return clazz.cast(io.realm.personal_droid_pychat_models_ChatRealmProxy.createDetachedCopy((personal.droid.pychat.models.Chat) realmObject, 0, maxDepth, cache));
@@ -416,8 +410,14 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
         if (clazz.equals(personal.droid.pychat.models.LogCall.class)) {
             return clazz.cast(io.realm.personal_droid_pychat_models_LogCallRealmProxy.createDetachedCopy((personal.droid.pychat.models.LogCall) realmObject, 0, maxDepth, cache));
         }
-        if (clazz.equals(personal.droid.pychat.models.Attachment.class)) {
-            return clazz.cast(io.realm.personal_droid_pychat_models_AttachmentRealmProxy.createDetachedCopy((personal.droid.pychat.models.Attachment) realmObject, 0, maxDepth, cache));
+        if (clazz.equals(personal.droid.pychat.models.Message.class)) {
+            return clazz.cast(io.realm.personal_droid_pychat_models_MessageRealmProxy.createDetachedCopy((personal.droid.pychat.models.Message) realmObject, 0, maxDepth, cache));
+        }
+        if (clazz.equals(personal.droid.pychat.models.MyString.class)) {
+            return clazz.cast(io.realm.personal_droid_pychat_models_MyStringRealmProxy.createDetachedCopy((personal.droid.pychat.models.MyString) realmObject, 0, maxDepth, cache));
+        }
+        if (clazz.equals(personal.droid.pychat.models.User.class)) {
+            return clazz.cast(io.realm.personal_droid_pychat_models_UserRealmProxy.createDetachedCopy((personal.droid.pychat.models.User) realmObject, 0, maxDepth, cache));
         }
         throw getMissingProxyClassException(clazz);
     }

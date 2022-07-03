@@ -188,6 +188,7 @@ public class ChatActivity extends BaseActivity implements OnMessageItemClick, Me
     private AudioPicker audioPicker;
     private VideoPicker videoPicker;
 
+
     //Download complete listener
     private BroadcastReceiver downloadCompleteReceiver = new BroadcastReceiver() {
         public void onReceive(Context context, Intent intent) {
@@ -326,8 +327,6 @@ public class ChatActivity extends BaseActivity implements OnMessageItemClick, Me
         //setup recycler view
 
 
-
-
         messageAdapter = new MessageAdapter(this, dataList, userMe.getId(), newMessage);
 
         Log.e("Message = ", "" + dataList);
@@ -370,16 +369,16 @@ public class ChatActivity extends BaseActivity implements OnMessageItemClick, Me
         RealmQuery<Chat> query = Helper.getChat(rChatDb, userMe.getId(), userOrGroupId);//rChatDb.where(Chat.class).equalTo("myId", userMe.getId()).equalTo("userId", user.getId());
         queryResult = query.findAll();// to get all data from database.
         queryResult.addChangeListener(realmChangeListener);//register change listener
-        Log.e("queryResult",queryResult.asJSON());
+        Log.e("queryResult", queryResult.asJSON());
         Chat prevChat = query.findFirst();
         //to get last message from database.
         //Add all messages from queried chat into recycler view
         if (prevChat != null) {
             dataList.addAll(prevChat.getMessages());// to store all data from database.
-            Log.e("getMessages",""+prevChat.getMessages().first());
+            Log.e("getMessages", "" + prevChat.getMessages().first());
             messageAdapter.notifyDataSetChanged();
             recyclerView.scrollToPosition(messageAdapter.getItemCount() - 1);
-            Log.e("getItemCount",""+messageAdapter.getItemCount());
+            Log.e("getItemCount", "" + messageAdapter.getItemCount());
         }
         registerUserUpdates();
         checkAndForward();
@@ -421,6 +420,7 @@ public class ChatActivity extends BaseActivity implements OnMessageItemClick, Me
         findViewById(R.id.attachment_audio).setOnClickListener(this);
         findViewById(R.id.attachment_location).setOnClickListener(this);
         findViewById(R.id.attachment_document).setOnClickListener(this);
+
         newMessage.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -1563,6 +1563,7 @@ public class ChatActivity extends BaseActivity implements OnMessageItemClick, Me
 
     @Override
     public void onImagesChosen(List<ChosenImage> list) {
+        Log.e("IMAGESSSSS", list.toString());
         if (list != null && !list.isEmpty()) {
             Uri originalFileUri = Uri.parse(list.get(0).getOriginalPath());
             File tempFile = new File(getCacheDir(), originalFileUri.getLastPathSegment());
