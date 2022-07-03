@@ -1,0 +1,4 @@
+# Referenced at E:\New folder (13)\PyChat-master\app\build\intermediates\merged_manifests\debug\AndroidManifest.xml:40
+-keep class androidx.core.app.CoreComponentFactory { <init>(); }
+# Referenced at E:\New folder (13)\PyChat-master\app\build\intermediates\merged_manifests\debug\AndroidManifest.xml:40
+-keep class personal.droid.pychat.BaseApplication { <init>(); }

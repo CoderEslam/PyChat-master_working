@@ -1,0 +1,26 @@
+<component name="libraryTable">
+  <library name="Gradle: com.vanniktech:emoji-google:0.6.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5f3a4606d6bd0862ed52a2dca874f6ce/jetified-emoji-google-0.6.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5f3a4606d6bd0862ed52a2dca874f6ce/jetified-emoji-google-0.6.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8209d1c92160b2d4debbcedf223f87be/jetified-emoji-google-0.6.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8209d1c92160b2d4debbcedf223f87be/jetified-emoji-google-0.6.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8209d1c92160b2d4debbcedf223f87be/jetified-emoji-google-0.6.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fb686a06c2b5a01f978a7fb9c7fc4eaf/jetified-emoji-google-0.6.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fb686a06c2b5a01f978a7fb9c7fc4eaf/jetified-emoji-google-0.6.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fb686a06c2b5a01f978a7fb9c7fc4eaf/jetified-emoji-google-0.6.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/da4134c19cce324d3cec3d903935dec9/jetified-emoji-google-0.6.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/da4134c19cce324d3cec3d903935dec9/jetified-emoji-google-0.6.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/da4134c19cce324d3cec3d903935dec9/jetified-emoji-google-0.6.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1976a7035739ae40e3f31fb21c18451c/jetified-emoji-google-0.6.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1976a7035739ae40e3f31fb21c18451c/jetified-emoji-google-0.6.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1976a7035739ae40e3f31fb21c18451c/jetified-emoji-google-0.6.0/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.vanniktech/emoji-google/0.6.0/d894d029e94d75bbfecc3e501e132e6968dcc043/emoji-google-0.6.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.vanniktech/emoji-google/0.6.0/d352009829148ab8d0fee6868d89fcf0c3c76ad/emoji-google-0.6.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

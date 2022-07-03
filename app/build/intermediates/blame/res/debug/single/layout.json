@@ -1,0 +1,182 @@
+[
+    {
+        "merged": "E:\\New folder (13)\\PyChat-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_menu_user.xml",
+        "source": "E:\\New folder (13)\\PyChat-master\\app\\src\\main\\res\\layout\\item_menu_user.xml"
+    },
+    {
+        "merged": "E:\\New folder (13)\\PyChat-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_message_text.xml",
+        "source": "E:\\New folder (13)\\PyChat-master\\app\\src\\main\\res\\layout\\item_message_text.xml"
+    },
+    {
+        "merged": "E:\\New folder (13)\\PyChat-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_group_select.xml",
+        "source": "E:\\New folder (13)\\PyChat-master\\app\\src\\main\\res\\layout\\fragment_group_select.xml"
+    },
+    {
+        "merged": "E:\\New folder (13)\\PyChat-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_user_detail.xml",
+        "source": "E:\\New folder (13)\\PyChat-master\\app\\src\\main\\res\\layout\\fragment_user_detail.xml"
+    },
+    {
+        "merged": "E:\\New folder (13)\\PyChat-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_incoming_call_screen.xml",
+        "source": "E:\\New folder (13)\\PyChat-master\\app\\src\\main\\res\\layout\\activity_incoming_call_screen.xml"
+    },
+    {
+        "merged": "E:\\New folder (13)\\PyChat-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\empty_view.xml",
+        "source": "E:\\New folder (13)\\PyChat-master\\app\\src\\main\\res\\layout\\empty_view.xml"
+    },
+    {
+        "merged": "E:\\New folder (13)\\PyChat-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_message_typing.xml",
+        "source": "E:\\New folder (13)\\PyChat-master\\app\\src\\main\\res\\layout\\item_message_typing.xml"
+    },
+    {
+        "merged": "E:\\New folder (13)\\PyChat-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\dialog_v_card_detail.xml",
+        "source": "E:\\New folder (13)\\PyChat-master\\app\\src\\main\\res\\layout\\dialog_v_card_detail.xml"
+    },
+    {
+        "merged": "E:\\New folder (13)\\PyChat-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_message_attachment_image.xml",
+        "source": "E:\\New folder (13)\\PyChat-master\\app\\src\\main\\res\\layout\\item_message_attachment_image.xml"
+    },
+    {
+        "merged": "E:\\New folder (13)\\PyChat-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_selection_header.xml",
+        "source": "E:\\New folder (13)\\PyChat-master\\app\\src\\main\\res\\layout\\fragment_selection_header.xml"
+    },
+    {
+        "merged": "E:\\New folder (13)\\PyChat-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_chats.xml",
+        "source": "E:\\New folder (13)\\PyChat-master\\app\\src\\main\\res\\layout\\activity_chats.xml"
+    },
+    {
+        "merged": "E:\\New folder (13)\\PyChat-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "E:\\New folder (13)\\PyChat-master\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "E:\\New folder (13)\\PyChat-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_contact_number.xml",
+        "source": "E:\\New folder (13)\\PyChat-master\\app\\src\\main\\res\\layout\\item_contact_number.xml"
+    },
+    {
+        "merged": "E:\\New folder (13)\\PyChat-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\footer_view.xml",
+        "source": "E:\\New folder (13)\\PyChat-master\\app\\src\\main\\res\\layout\\footer_view.xml"
+    },
+    {
+        "merged": "E:\\New folder (13)\\PyChat-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_splash.xml",
+        "source": "E:\\New folder (13)\\PyChat-master\\app\\src\\main\\res\\layout\\activity_splash.xml"
+    },
+    {
+        "merged": "E:\\New folder (13)\\PyChat-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_media_summary.xml",
+        "source": "E:\\New folder (13)\\PyChat-master\\app\\src\\main\\res\\layout\\item_media_summary.xml"
+    },
+    {
+        "merged": "E:\\New folder (13)\\PyChat-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_confirmation.xml",
+        "source": "E:\\New folder (13)\\PyChat-master\\app\\src\\main\\res\\layout\\fragment_confirmation.xml"
+    },
+    {
+        "merged": "E:\\New folder (13)\\PyChat-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_user_select.xml",
+        "source": "E:\\New folder (13)\\PyChat-master\\app\\src\\main\\res\\layout\\fragment_user_select.xml"
+    },
+    {
+        "merged": "E:\\New folder (13)\\PyChat-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_main_recycler.xml",
+        "source": "E:\\New folder (13)\\PyChat-master\\app\\src\\main\\res\\layout\\fragment_main_recycler.xml"
+    },
+    {
+        "merged": "E:\\New folder (13)\\PyChat-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_menu_user_invite.xml",
+        "source": "E:\\New folder (13)\\PyChat-master\\app\\src\\main\\res\\layout\\item_menu_user_invite.xml"
+    },
+    {
+        "merged": "E:\\New folder (13)\\PyChat-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_selected_user.xml",
+        "source": "E:\\New folder (13)\\PyChat-master\\app\\src\\main\\res\\layout\\item_selected_user.xml"
+    },
+    {
+        "merged": "E:\\New folder (13)\\PyChat-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_maps.xml",
+        "source": "E:\\New folder (13)\\PyChat-master\\app\\src\\main\\res\\layout\\activity_maps.xml"
+    },
+    {
+        "merged": "E:\\New folder (13)\\PyChat-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_profile_edit.xml",
+        "source": "E:\\New folder (13)\\PyChat-master\\app\\src\\main\\res\\layout\\fragment_profile_edit.xml"
+    },
+    {
+        "merged": "E:\\New folder (13)\\PyChat-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_options.xml",
+        "source": "E:\\New folder (13)\\PyChat-master\\app\\src\\main\\res\\layout\\fragment_options.xml"
+    },
+    {
+        "merged": "E:\\New folder (13)\\PyChat-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\adapter_item_log_call.xml",
+        "source": "E:\\New folder (13)\\PyChat-master\\app\\src\\main\\res\\layout\\adapter_item_log_call.xml"
+    },
+    {
+        "merged": "E:\\New folder (13)\\PyChat-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_message_attachment_location.xml",
+        "source": "E:\\New folder (13)\\PyChat-master\\app\\src\\main\\res\\layout\\item_message_attachment_location.xml"
+    },
+    {
+        "merged": "E:\\New folder (13)\\PyChat-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\content_main.xml",
+        "source": "E:\\New folder (13)\\PyChat-master\\app\\src\\main\\res\\layout\\content_main.xml"
+    },
+    {
+        "merged": "E:\\New folder (13)\\PyChat-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_privacy.xml",
+        "source": "E:\\New folder (13)\\PyChat-master\\app\\src\\main\\res\\layout\\fragment_privacy.xml"
+    },
+    {
+        "merged": "E:\\New folder (13)\\PyChat-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_call_screen.xml",
+        "source": "E:\\New folder (13)\\PyChat-master\\app\\src\\main\\res\\layout\\activity_call_screen.xml"
+    },
+    {
+        "merged": "E:\\New folder (13)\\PyChat-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\partial_message_status_view.xml",
+        "source": "E:\\New folder (13)\\PyChat-master\\app\\src\\main\\res\\layout\\partial_message_status_view.xml"
+    },
+    {
+        "merged": "E:\\New folder (13)\\PyChat-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_group_select_members.xml",
+        "source": "E:\\New folder (13)\\PyChat-master\\app\\src\\main\\res\\layout\\fragment_group_select_members.xml"
+    },
+    {
+        "merged": "E:\\New folder (13)\\PyChat-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_message_attachment_recording.xml",
+        "source": "E:\\New folder (13)\\PyChat-master\\app\\src\\main\\res\\layout\\item_message_attachment_recording.xml"
+    },
+    {
+        "merged": "E:\\New folder (13)\\PyChat-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_country_spinner.xml",
+        "source": "E:\\New folder (13)\\PyChat-master\\app\\src\\main\\res\\layout\\item_country_spinner.xml"
+    },
+    {
+        "merged": "E:\\New folder (13)\\PyChat-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_group_new.xml",
+        "source": "E:\\New folder (13)\\PyChat-master\\app\\src\\main\\res\\layout\\fragment_group_new.xml"
+    },
+    {
+        "merged": "E:\\New folder (13)\\PyChat-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_message_attachment_document.xml",
+        "source": "E:\\New folder (13)\\PyChat-master\\app\\src\\main\\res\\layout\\item_message_attachment_document.xml"
+    },
+    {
+        "merged": "E:\\New folder (13)\\PyChat-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_sign_in_1.xml",
+        "source": "E:\\New folder (13)\\PyChat-master\\app\\src\\main\\res\\layout\\activity_sign_in_1.xml"
+    },
+    {
+        "merged": "E:\\New folder (13)\\PyChat-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_user_sub_media.xml",
+        "source": "E:\\New folder (13)\\PyChat-master\\app\\src\\main\\res\\layout\\fragment_user_sub_media.xml"
+    },
+    {
+        "merged": "E:\\New folder (13)\\PyChat-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_user_media.xml",
+        "source": "E:\\New folder (13)\\PyChat-master\\app\\src\\main\\res\\layout\\fragment_user_media.xml"
+    },
+    {
+        "merged": "E:\\New folder (13)\\PyChat-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_message_attachment_contact.xml",
+        "source": "E:\\New folder (13)\\PyChat-master\\app\\src\\main\\res\\layout\\item_message_attachment_contact.xml"
+    },
+    {
+        "merged": "E:\\New folder (13)\\PyChat-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_message_attachment_video.xml",
+        "source": "E:\\New folder (13)\\PyChat-master\\app\\src\\main\\res\\layout\\item_message_attachment_video.xml"
+    },
+    {
+        "merged": "E:\\New folder (13)\\PyChat-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_message_attachment_audio.xml",
+        "source": "E:\\New folder (13)\\PyChat-master\\app\\src\\main\\res\\layout\\item_message_attachment_audio.xml"
+    },
+    {
+        "merged": "E:\\New folder (13)\\PyChat-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_user_detail.xml",
+        "source": "E:\\New folder (13)\\PyChat-master\\app\\src\\main\\res\\layout\\activity_user_detail.xml"
+    },
+    {
+        "merged": "E:\\New folder (13)\\PyChat-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\adapter_item_user.xml",
+        "source": "E:\\New folder (13)\\PyChat-master\\app\\src\\main\\res\\layout\\adapter_item_user.xml"
+    },
+    {
+        "merged": "E:\\New folder (13)\\PyChat-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_sign_in_2.xml",
+        "source": "E:\\New folder (13)\\PyChat-master\\app\\src\\main\\res\\layout\\activity_sign_in_2.xml"
+    },
+    {
+        "merged": "E:\\New folder (13)\\PyChat-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_image_viewer.xml",
+        "source": "E:\\New folder (13)\\PyChat-master\\app\\src\\main\\res\\layout\\activity_image_viewer.xml"
+    }
+]

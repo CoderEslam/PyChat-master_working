@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">1041825282482-6m6tokpsp7eoei94bae31919hthigjfh.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://pychatmaster-default-rtdb.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">1041825282482</string>
+    <string name="google_api_key" translatable="false">AIzaSyCD-ikA8ec69dK-KMFTQDcXQQX2_QJWa90</string>
+    <string name="google_app_id" translatable="false">1:1041825282482:android:a389f7fe81a676b7a48cab</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCD-ikA8ec69dK-KMFTQDcXQQX2_QJWa90</string>
+    <string name="google_storage_bucket" translatable="false">pychatmaster.appspot.com</string>
+    <string name="project_id" translatable="false">pychatmaster</string>
+</resources>

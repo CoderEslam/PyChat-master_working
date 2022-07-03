@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1041825282482",
+    "firebase_url": "https://pychatmaster-default-rtdb.firebaseio.com",
+    "project_id": "pychatmaster",
+    "storage_bucket": "pychatmaster.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1041825282482:android:a389f7fe81a676b7a48cab",
+        "android_client_info": {
+          "package_name": "personal.droid.pychat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1041825282482-spg4ql4eujjg15nfcvfpnsqnob2k39ms.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "personal.droid.pychat",
+            "certificate_hash": "446697680e202a35ea031324b907143c4de560a7"
+          }
+        },
+        {
+          "client_id": "1041825282482-6m6tokpsp7eoei94bae31919hthigjfh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCD-ikA8ec69dK-KMFTQDcXQQX2_QJWa90"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1041825282482-6m6tokpsp7eoei94bae31919hthigjfh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
